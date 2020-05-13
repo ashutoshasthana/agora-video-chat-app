@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "agoravideochat": {
+    "gora-video-chat-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/agoravideochat",
+            "outputPath": "dist/gora-video-chat-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "agoravideochat:build"
+            "browserTarget": "gora-video-chat-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "agoravideochat:build:production"
+              "browserTarget": "gora-video-chat-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "agoravideochat:build"
+            "browserTarget": "gora-video-chat-app:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "agoravideochat:serve"
+            "devServerTarget": "gora-video-chat-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "agoravideochat:serve:production"
+              "devServerTarget": "gora-video-chat-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "agoravideochat"
+  "defaultProject": "gora-video-chat-app"
 }
